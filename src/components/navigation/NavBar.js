@@ -11,14 +11,18 @@ export default class NavBar extends Component {
         }}
       >
         <span className="navbar-brand mb-0 h1">
-          <i className="fab fa-hacker-news-square" /> Navbar
+          <i className="fab fa-hacker-news-square" /> Hacker News
         </span>
         <div style={{ float: 'right' }}>
           <span className="mr-3" style={{ color: 'white' }}>
-            Top Stories
+            <a href="/1" style={{ color: 'inherit', font: 'inherit' }}>
+              Top Stories
+            </a>
           </span>
           <span className="mr-3" style={{ color: 'white' }}>
-            New
+            <a href="/new/1" style={{ color: 'inherit', font: 'inherit' }}>
+              New
+            </a>
           </span>
           <span className="mr-3" style={{ color: 'white' }}>
             Comments
