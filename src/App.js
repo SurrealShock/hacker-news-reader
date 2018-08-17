@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/navigation/NavBar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import PostPage from './components/pages/PostPage';
+import PostList from './components/PostList';
+import NewList from './components/NewList';
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
         <div className="App">
           <NavBar />
           <Switch>
-            <Route exact path="/page/:page" component={PostPage} />
+            <Route exact path="/:page" component={PostList} />
+            <Route exact path="/new/:page" component={NewList} />
           </Switch>
         </div>
       </Router>
